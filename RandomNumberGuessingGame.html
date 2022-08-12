@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Random Number Generator Game</title>
+  <link rel="stylesheet" href="RandomNumber.css">
+  <script type="text/javascript" src="RandomNumberUI.js">
+  window.onload = txt();
+</script>
+  <script type="text/javascript" src="RandomNumberGame.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="showLevel">
+      Level 0-<p id="maxNumId"></p>
+    </div>
+    <div class="numberWon">
+      Levels won:
+      <div id="numWonId"></div>
+    </div>
+  <div id="lPlay" class="gridtest">
+    <div id="playQid" class="playQ">Do you want to play a game?</div>
+    <div id="lPlayButt" class="button1 butth" onclick="letsPlay()">Let's play!</div>
+    <div id="notId" class="notNw butth" onclick="notNow()">Not now.</div>
+  </div>
+  <div id="nGame" class="gridtest">
+<div class="button1 butth" onclick="askNum()">Guess the number</div>
+<div>
+</div>
+</div>
+<div id="uWinId" class="gridtest">
+  <div id="playQid" class="playQ">You are a winner!</div>
+  <div id="playAg" class="playAgB butth" onclick="playAg()">Start over</div>
+  <div id="nLevel" class="button2 butth" onclick="nLevel()">Next level</div>
+</div>
+</div>
+</body>
+</html>
